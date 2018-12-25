@@ -49,7 +49,7 @@ class NavBar extends React.Component {
 			<nav>
 				<div className="nav-wrapper cyan  darken-3">
 					<NavLink to="" className="brand-logo left">
-						Home
+						<i className="material-icons">home</i>
 					</NavLink>
 
 					<ul id="nav-mobile" className="right">

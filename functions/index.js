@@ -2,9 +2,9 @@ const functions = require('firebase-functions')
 const admin = require('firebase-admin')
 admin.initializeApp(functions.config().firebase)
 
-exports.helloWorld = functions.https.onRequest((request, response) => {
-	response.send('Application web pour le suivi des projets tutores')
-})
+// exports.helloWorld = functions.https.onRequest((request, response) => {
+// 	response.send('Application web pour le suivi des projets tutores')
+// })
 
 const createNotification = notification => {
 	return admin

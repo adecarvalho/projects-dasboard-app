@@ -10,7 +10,8 @@ import {
 
 const initState = {
 	posts: [],
-	error: ''
+	error: '',
+	isLoading: false
 }
 
 const postReducer = (state = initState, action) => {
@@ -20,14 +21,16 @@ const postReducer = (state = initState, action) => {
 		case INIT_POSTS: {
 			return {
 				...state,
-				posts: []
+				posts: [],
+				isLoading: true
 			}
 		}
 		//
 		case GET_POST_ERROR: {
 			return {
 				...state,
-				error: action.payload
+				error: action.payload,
+				isLoading: false
 			}
 		}
 		//
@@ -35,14 +38,16 @@ const postReducer = (state = initState, action) => {
 			return {
 				...state,
 				error: '',
-				posts: [...state.posts, action.payload]
+				posts: [...state.posts, action.payload],
+				isLoading: false
 			}
 		}
 		//
 		case ADD_NEW_POST_SUCCESS: {
 			return {
 				...state,
-				error: ''
+				error: '',
+				isLoading: false
 			}
 		}
 
@@ -50,7 +55,8 @@ const postReducer = (state = initState, action) => {
 		case ADD_NEW_POST_ERROR: {
 			return {
 				...state,
-				error: action.payload
+				error: action.payload,
+				isLoading: false
 			}
 		}
 

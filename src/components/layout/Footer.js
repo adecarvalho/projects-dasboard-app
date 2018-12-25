@@ -5,7 +5,7 @@ const Footer = props => {
 		<footer>
 			<div className="footer-copyright">
 				<div className="container grey-text text-darken-3">
-					<small>&copy; 2018 A.DeCarvalho</small>
+					<small>&copy; 2019 A.DeCarvalho</small>
 				</div>
 			</div>
 		</footer>
