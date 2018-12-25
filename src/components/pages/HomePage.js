@@ -1,16 +1,19 @@
 import React from 'react'
 
 import CardConnexion from '../containers/CardConnexion'
+import CardNotification from '../containers/CardNotification'
 
 class HomePage extends React.Component {
-	componentWillMount() {}
-
 	render() {
 		return (
-			<div className="container">
+			<div className="fluid">
 				<div className="row">
-					<div className="col s12">
+					<div className="col s12 m7">
 						<CardConnexion />
+					</div>
+
+					<div className="col s12 m4 offset-m1">
+						<CardNotification />
 					</div>
 				</div>
 			</div>

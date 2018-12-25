@@ -14,3 +14,7 @@ export const GET_POST_ERROR = 'get_post_error'
 
 export const SET_VISA_SUCCESS = 'set_visa_success'
 export const SET_VISA_ERROR = 'set_visa_error'
+
+export const INIT_NOTIFICATIONS = 'init_notifications'
+export const GET_NOTIFICATIONS_SUCCESS = 'get_notifications_success'
+export const GET_NOTIFICATIONS_ERROR = 'get_notifications_error'
